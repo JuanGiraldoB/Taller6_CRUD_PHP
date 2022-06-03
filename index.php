@@ -31,7 +31,7 @@
                   <h4 class="mt-1 mb-5 pb-1">Inicio de Sesión</h4>
                 </div>
 
-                <form>
+                <form action="pagina_usuario.php">
                   <p>Ingreso de datos</p>
 
                   <div class="form-outline mb-4">
@@ -45,7 +45,7 @@
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Entrar</button>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Entrar</button>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
