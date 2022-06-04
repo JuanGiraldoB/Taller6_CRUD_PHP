@@ -19,3 +19,7 @@
     border-bottom-right-radius: .3rem;
     }
     }
+
+.form_register{
+  display: none;
+}
