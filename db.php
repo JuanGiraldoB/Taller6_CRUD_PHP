@@ -6,6 +6,6 @@ $conn = mysqli_connect(
     'localhost',
     'root',
     '',
-    'taller6web'
+    'taller6crud_php'
 );
 ?>
