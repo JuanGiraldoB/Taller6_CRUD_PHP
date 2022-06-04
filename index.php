@@ -11,6 +11,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -36,12 +38,9 @@
                     style="width: 185px;" alt="logo">
                 </div>
 
-<<<<<<< HEAD
                 <form class="form_login">
                   <h4 class="mt-1 mb-5 pb-1">Inicio de Sesión</h4>
-=======
                 <form action="pagina_usuario.php">
->>>>>>> f63d3675970c19175085d8524915b5f71a2e8c26
                   <p>Ingreso de datos</p>
 
                   <div class="form-outline mb-4">

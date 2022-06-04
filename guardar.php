@@ -19,7 +19,7 @@ if(isset($_POST['save'])){
         //die("Falló consulta.");
     }
     else{
-        $_SESSION['mensaje'] = "Estudiante guardado";
+        $_SESSION['mensaje'] = "Usuario guardado";
         $_SESSION['tipo_mensaje'] = "success";
     }
     header("Location: index.php");
