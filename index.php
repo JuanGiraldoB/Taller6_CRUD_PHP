@@ -23,15 +23,21 @@
         <div class="card rounded-3 text-black">
           <div class="row g-0">
             <div class="col-lg-6">
+            <?php if(isset($_SESSION['mensaje'])){?>
+                <div class="alert alert-<?= $_SESSION['tipo_mensaje'];?> alert-dismissible fade show" role="alert">
+                    <?php echo $_SESSION['mensaje'];?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" arial-label="Close"></button>
+                </div>
+            <?php session_unset();}?>
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
                   <img src="assets/images/imagen_1.png"
                     style="width: 185px;" alt="logo">
-                  <h4 class="mt-1 mb-5 pb-1">Inicio de Sesión</h4>
                 </div>
 
-                <form>
+                <form class="form_login">
+                  <h4 class="mt-1 mb-5 pb-1">Inicio de Sesión</h4>
                   <p>Ingreso de datos</p>
 
                   <div class="form-outline mb-4">
@@ -50,9 +56,36 @@
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">¿No se ha registrado?</p>
-                    <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Registrar</button>
+                    <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="registrar()">Registrar</button>
+                  </div>
+                </form>
+
+                <form action="guardar.php" method="POST" class="form_register">
+                  <h4 class="mt-1 mb-5 pb-1">Registro</h4>
+                  <p>Ingreso de datos</p>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="ident2" name="ident2" class="form-control" placeholder="Número de identificación" />
+                    <label class="form-label" for="ident2">Identificación</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="nom" name="nom" class="form-control" placeholder="Nombre" />
+                    <label class="form-label" for="nom">Nombre</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="contra2" name="contra2" class="form-control" />
+                    <label class="form-label" for="contra2">Contraseña</label>
                   </div>
 
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <input type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" name="save" value="Registrar">
+                    
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">¿Ya tiene cuenta?</p>
+                    <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="inicio_sesion()">Iniciar Sesión</button>
+                  </div>
                 </form>
 
               </div>
@@ -96,4 +129,5 @@
     </main>
     
 </body>
+<script src="assets/scripts.js"></script>
 </html>
